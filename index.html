@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+<style>
+     #title{
+          text-align: center;
+          padding-left: 30%;
+          padding-right: 30%;
+
+     }
+     #description{
+          text-align: center;
+          padding-left: 30%;
+          padding-right: 30%;
+
+     }
+     body{
+          font-family: sans-serif;
+          padding-left: 20%;
+          padding-right: 20%;
+     }
+     label.{
+          font-size: 10px;
+          display: block;
+          padding-bottom: 10px;
+          font-weight: 10%;
+     }
+     input{
+          display: block;
+          width: 100%;
+          align-content: center;
+          
+     }
+     form{
+          background-color: aqua;
+          padding: 40px 40px 40px 40px;
+          border-radius: 5%;
+          text-align: center;
+     }
+     ::placeholder{
+          text-align: center;
+     }
+     textarea{
+          width: 100%;
+     }
+     #dropdown{
+          padding: 10px 10px 10px 10px;
+          border: red 3px solid;
+     }
+     
+</style>
+</head>
+<body>
+     <h1 id="title">MYSELF</h1>
+     <p id="description"> where you can tell us about yourself!
+     </p>
+     <form id="survey-form">
+      <label id="name-label"> Name:</label>
+          <input id="name" name="name" type="text" required placeholder="Enter yout Name Here"></input> <br>
+      <label id="email-label"> Email:</label>
+          <input id="email" name="email" type="email" required placeholder="Enter Your Email Here"></input> <br>
+      <label id="number-label">Number:</label>
+          <input id="number" name="name" type="number" min="0" max="10" required placeholder="Label"></input> <br>
+
+      
+
+      
+<select id="dropdown" name="Hobby">
+  <option value="gardening">gardening</option>
+  <option value="fishing">fishing</option>
+  <option value="rideing-cycle">rideing-cycle</option>
+  <option value="rowing">rowing</option>
+</select> 
+<br>
+<label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+
+
+    <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+    <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+    <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+
+<textarea placeholder="Additional Comments"></textarea><button id="submit" type="submit">Submit</button>
+
+     </form>
+     <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
